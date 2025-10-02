@@ -5,6 +5,7 @@ def words_counter(text):
         counter += 1
     return counter
 
+
 def letters_counter(text):
     mod_string = text.lower()
     letters_dic = {}
@@ -15,3 +16,12 @@ def letters_counter(text):
         else:
             letters_dic[char] = 1
     return letters_dic
+
+
+def sort_on(items):
+    return items["num"]
+
+
+def print_it(items):
+    for item in items:
+        print(f"{item['char']}: {item['num']}")
